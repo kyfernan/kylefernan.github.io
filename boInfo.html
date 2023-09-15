@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Kyle Fernan - Mechanical Engineering</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href=index.html class="image avatar"><img src="images/kylepfp.jpg" alt="" /></a>
+					<h1><strong>Hi there, I'm Kyle</strong>!</h1>
+					<p>I am currently pursuing a Bachelor of Science in Mechanical Engineering with a Specialization in Mechanical Design and a
+						Minor in Business Management at UCI. I have a deep passion for any and all things design oriented, ranging anywhere from simple hobby 3d print 
+						all the way to the human-oriented robots that I work on at UCI's Biorobotics lab.  
+						 Please check out some of the projects that have
+					occupied my time in these past years.</p>
+				</div>
+			</header>
+            <div id="main">
+                <section id="one">
+                    <h1>Bo-Bot</h1>
+                    <p>With its body made of various recycled objects, this is the first iteration of Bo-Bot, a robot which stemmed from my wish to lighten the workload during rushes
+                        at the boba store I worked at.</p>
+                    <div style="text-align: center;">
+                            <img src="images/bobotfull.png"
+                            style="object-fit:contain;
+                            width:500px;
+                            height:500px;
+                            "/>
+                    </div>  
+                    <p>In the early planning phases, I knew that I wanted Bo-Bot to not only roam the store, but explicitly approach customers. The method of approaching customers
+                        is one that gave me some trouble, but it was seeing the Termovision from the movie Terminator, particularly the way the Terminators use thermal vision to find targets,
+                         that inspired me to use thermal 
+                        sensors. By detecting an array of tiles that within an average range
+                    of human body temperatures, Bo-Bot knew to lock on to that area as there was likely a human there. Here is a video of Bo-Bot in action!</p>  
+                    <div style="text-align: center;">
+                        <video width="500" controls>
+                            <source src="images/Bo-vid.mp4" type="video/mp4" style="object-fit: cover;">
+                        </video>
+                    </div>
+    
+                </section>
+       
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/kyle-fernan/" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="index.html#section-id" id=scrollLink class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<script>
+							document.getElementById('scrollLink').addEventListener('click', function(event) {
+								event.preventDefault();
+								window.scrollTo({
+									top: document.body.scrollHeight,
+									behavior: 'smooth'
+								});
+							});
+							</script>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
