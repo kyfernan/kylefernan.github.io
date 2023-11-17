@@ -53,33 +53,80 @@
                             height:500px;
                             "/>
                         </div>
-                        <p>This device straps to the feet of patients and applies vibration to replicate the sensations of walking while receiving robotic therapy.
-                            I am currently leading its design under UCI's Biorobotics Lab for the Airstep Project, one that is developing a device that rolls up to the bed of patients with spinal
-                            cord injuries and replicates the motion of walking while laying down using a system of cables and pulleys. By referencing the patient's position in their gait cycle through data 
-                            retreived from the Airstep robot, this device provides haptic stimulation in a waveform pattern from heel to toe that mimics the sensations that would be felt during a regular step. 
-                        </p>
-                    
+                        <style>
+							/* Reduce margins and paddings for paragraphs and image */
+							p {
+								margin: 50px 0; /* Adjust the margin as needed */
+							}
+						
+							.image-container {
+								text-align: center;
+								margin: 0 auto; /* Center the container horizontally and remove margin */
+								padding: 0; /* Remove padding from the container */
+							}
+						
+							.image-container img {
+								display: block; /* Ensure the image behaves as a block element */
+								width: 100%; /* Ensure the image takes the full width of its container */
+								max-width: 750px; /* Set maximum width for the image */
+								height: auto; /* Maintain aspect ratio */
+								margin: 0 auto; /* Center the image horizontally and remove margin */
+							}
+						</style>
+						
+						<p>This device straps to the feet of patients and applies vibration to replicate the sensations of walking while receiving robotic therapy.
+							I am currently leading its design under UCI's Biorobotics Lab for the Airstep Project, one that is developing a device that rolls up to the bed of patients with spinal
+							cord injuries and replicates the motion of walking while laying down using a system of cables and pulleys. By referencing the patient's position in their gait cycle through data 
+							retrieved from the Airstep robot, this device provides haptic stimulation in a waveform pattern from heel to toe that mimics the sensations that would be felt during a regular step. 
+						</p>
+						
+						<div class="image-container">
+							<img src="images/simpicside.jpg" alt="Image description" />
+						</div>
+						
+						<p>With clinical application in mind, the initial parameters for this design were that it had to supply a sufficient amount stimulation to the feet,
+							and that it must be able to fit nearly all foot sizes and proportions. My team put a great deal of research into the primary mechanics that would go into the device,
+							and we ultimately used this 3D printed three-segmented slotted rail design to allow for a wide range of size variation, fitting sizes all the way from a US 4 to a US 15.
+						</p>
+					<!--                     
                             <div class="image-container">
                                 <img src="images/simpictop.jpg" alt="Top of Device">
                                 <div class="space"></div>
                                 <img src="images/simpicbottom.jpg" alt="Bottom of Device">
                             </div>
                             
-
-                        <p>With clinical application in mind, the initial parameters for this design were that it had to supply a sufficient amount stimulation to the feet,
-                            and that it must be able to fit nearly all foot sizes and proportions. My team put a great deal of research into the primary mechanics that would go into the device,
-                            and we ultimately used this 3d printed three-segmented slotted rail design to allow for a wide range of size variation,
-                        fitting sizes all the way from a US 4 to a US 15. Referencing pressuremaps of the foot, we were able to determine which areas were most necessary to apply vibration; the toes, midsole, and heel.
+ -->
+						<!-- 	 Referencing pressuremaps of the foot, we were able to determine which areas were most necessary to apply vibration; the toes, midsole, and heel.
                         In the first iteration, we encountered the issue of vibration being dampened by a solid PLA housing, so in this version we pivoted to directly laying the motor into a metal strip which will
-                        be laid onto the plastic housing, reducing potential sources of dampening and using a more vibration-transmissible material.</p>
-                        <div style="text-align: center;">
+                        be laid onto the plastic housing, reducing potential sources of dampening and using a more vibration-transmissible material. --></p>
+						<p>
+							One particular challenge that we encountered was that with this feature of varied size, we were unable to use traditional static length
+							wiring methods. Being inspired by landline telephones I saw while I was out thrifting, I came up with the idea to use coiled telephone cables and RJ9 connectors to allow for a wide range of motion,
+							along with the added benefit of making the device entirely modular. This feature lended itself excellently to our later stages of R&D where we began to test different types of motors,
+							allowing us to quickly and painlessly swap components.
+						</p>
+                        <!-- <div style="text-align: center;">
                             <img src="images/airsteppic1.png"
                             style="object-fit:contain;
                             width:500px;
                             height:500px;
                             "/>
-                        </div>
-                        <p>
+                        </div> -->
+						<div style="text-align: center;">
+							<video width="500" height="500" controls muted playsinline>
+								<source src="images/airstepvid.mp4" type="video/mp4">
+								<!-- Add additional source elements for different video formats if needed -->
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						<p>
+							This past Halloween, the Airstep team had the amazing opportunity to bring our robot to Ranchos Los Amigos National Rehabilitation Hospital to 
+							test our most recent developments, the Haptic Simuation Device being one of them. Plenty of valuable feedback and information was retrieved during this test, 
+							an immensly notable one being the confirmation that the foot device does indeed work, a patient claiming that it increased the sensation in her entire lower body by an order of
+							a magnitude. With this information in mind, we are continuing the development of the foot device, the above video showing a rough mockup of an ankle motion component
+							that would help increase the realism of the gait process.
+						</p>
+<!--                         <p>
                             As this is only the second iteration of the device, there is still much work to be done. Future plans include but are not limited to: improving the 
                             delivery of vibration by potentially targeting pressure hotspots more accurately, increasing the number of motors, or further exploring the effectiveness 
                             of different frequencies on human stimulation, along with general improvements such as implementing a more stable wiring system between segments.
@@ -88,7 +135,7 @@
                             The device will see its first clinical test toward the end of September at the Ranchos los Amigos National Rehabilitation Center, where I will be able to hear directly from 
                             patients what they would like to see from it. While this device is in its early phases of development, I have high hopes for the benefit that it can provide, and 
                             I am eager to continue its development throughout my academic journey.                        
-                        </p>
+                        </p> -->
 					</section>
 
 				
